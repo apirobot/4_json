@@ -1,20 +1,17 @@
 # Prettify JSON
 
-[TODO. There will be project description]
+Program displays json data in readable format (pretty print).
 
-# Quickstart
-
-[TODO]
-
-Example of script launch on Linux, Python 3.5:
-
-```#!bash
-
-$ python pprint_json.py <path to file>
-# TODO add output example
+## Usage
 
 ```
+usage: pprint_json.py [-h] DIR
 
-# Project Goals
+Prettify JSON
 
-The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
+positional arguments:
+  DIR         path to json
+
+optional arguments:
+  -h, --help  show this help message and exit
+```
