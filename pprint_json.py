@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import json
 import argparse
 
@@ -8,18 +7,19 @@ args = parser.parse_args()
 
 
 def load_data(filepath):
-    with open(filepath) as data_file:
-        return json.load(data_file)
+    with open(filepath) as file_handler:
+        return json.load(file_handler)
 
 
 def pretty_print_json(data):
-    pretty_json = json.dumps(data, ensure_ascii=False, sort_keys=True, indent=4)
-    print(pretty_json)
+    readable_json = json.dumps(data, ensure_ascii=False,
+                                     sort_keys=True, indent=4)
+    print(readable_json)
 
 
 def main():
-    data = load_data(args.json)
-    pretty_print_json(data)
+    json_content = load_data(args.json)
+    pretty_print_json(json_content)
 
 
 if __name__ == '__main__':
